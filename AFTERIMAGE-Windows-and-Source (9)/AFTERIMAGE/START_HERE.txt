@@ -1,0 +1,31 @@
+AFTERIMAGE — THE LAST ROOM  |  0.9.0-beta
+
+1. Extract the entire archive.
+2. Run AFTERIMAGE.exe with AFTERIMAGE.pck beside it.
+3. Choose ENTER THE BUILDING (or NEW MEMORY).
+
+WASD move • Mouse look • LMB fire order • RMB aim • R reload
+Shift sprint • Ctrl/C slide/crouch • Space jump
+Q lower weapon • F flashlight • E interact / hold to force or recharge
+Tab journal • Escape pause • F11 fullscreen
+
+Restore the exit circuit on FLOOR 02. Reach the fire exit on FLOOR 04.
+The central U staircase connects the floors. Take the rising flight, cross
+the landing, turn back and climb the other flight. Repeat for each floor.
+Recharge beside each stair entrance. The final memory needs three fragments;
+see LAST_LOOP.txt for the exact route.
+
+Read README.md for mechanics and spoiler-light navigation help.
+Editable Godot source is in Source/afterimage-game/.
+CREDITS.md documents music, textures, artwork and licenses.
+
+This is a playable prototype. Tested in Godot on Linux; native Windows
+runtime testing remains to be done.
+
+To update C:\Games\AFTERIMAGE-Windows-and-Source\v4, extract this
+archive separately, close the game and run Update-v4.cmd. Replaced files
+are backed up under the target folder. Or run this extracted EXE directly.
+
+NEW: hands track weapon grips; dialogue stays readable through transitions.
+Settings: Long Subtitle Duration / Large Subtitles. Tab: Recent Dialogue.
+Original reflective score included. Optional licensed music: Music/README.txt.

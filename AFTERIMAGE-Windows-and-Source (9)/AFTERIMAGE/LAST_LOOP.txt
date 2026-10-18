@@ -1,0 +1,26 @@
+FINAL LOOP — REMEMBRANCE (chapter 04)
+
+Press Tab to check fragments; earlier collected fragments still count.
+1. PHOTOGRAPH: Floor 01, starting/west corridor, first bedroom on your right
+   when walking forward from spawn.
+   Look inside for EXAMINE THE PHOTOGRAPH and press E.
+2. EVACUATION LIST: Floor 02, central hall north of the stairs.
+   Find the desk under EVACUATION REGISTER, look at the list and press E.
+3. WRISTBAND: Floor 04, west corridor (same side as the starting corridor),
+   northernmost bedroom.
+   Examine the bedside table beside the hospital bed with E.
+4. FIRE EXIT: Floor 04, east corridor, far/north end under EXIT.
+   Press E on the door, move through, then press E at LEAVE THROUGH
+   THE FIRE DOOR. With all three fragments, the final choice appears.
+5. Choose LET HIM FINISH for the acceptance ending.
+
+Stairs: take the flight that rises ahead, cross its landing, then turn
+back and climb the other flight. Repeat per floor.
+
+You do not need to kill or disarm everyone. The final-loop exit begins
+unlocked: restoring the Floor 02 circuit again is not required.
+INSIST IT WAS NECESSARY gives the alternate ending; Reconsider returns
+to the choice.
+
+0.9.1: Press E directly on the fire exit from the corridor. You no longer
+need to walk behind its door. Three fragments are still required.

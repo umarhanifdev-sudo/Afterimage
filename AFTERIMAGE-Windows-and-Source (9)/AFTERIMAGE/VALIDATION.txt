@@ -1,0 +1,92 @@
+POLISH UPDATE 0.9.0 — 2026-10-18
+Godot 4.5.1 official, Linux x64; Xvfb/Mesa llvmpipe for visual review.
+
+- polish.gd: 26/26. Reading-time holds, deduplication, contextual expiry,
+  ordered discovery lines, pause/fade timing, large text wrapping, transcript,
+  720 view poses across all four chapters (hip, ADS, lower, reload, recoil,
+  sprint, changing pitch/yaw), music mixing/ducking/pause, and a complete
+  exit-to-next-chapter dialogue transition.
+- redesign.gd: 53/53, movement, collision, stairs, combat, fragments and endings.
+- doors_stability.gd: 7/7, including obstruction and forced-opening recovery.
+- camera_quality.gd: 7/7, rendered input/interpolation probe with 3D disabled;
+  49/49 measured intertick frames moved at 20 Hz physics / 240 Hz render cap.
+- immersion.gd: 14/14, intro/pause/skip, movement after damage, crouch clearance,
+  skinned arms/body, soldier locomotion and persistent death pose.
+
+Windows resource-pack export and matching Linux runtime startup/shutdown
+passed at normal timing without errors. Pack reports 0.9.0-beta and a
+96.0-second reflective score.
+
+Rendered inspection: pistol/rifle/shotgun hip, ADS and reload; connected sleeves,
+flashlight grip, normal/large subtitles, transcript, and settings layout.
+What Remains verifies as stereo Vorbis, 44.1 kHz, exactly 96 seconds; synthesis
+peak -3.10 dBFS before encoding. No NieR:Automata recording is bundled.
+
+Accelerated test teardown still reports ObjectDB/resources in use (up to eight
+resources in the broad regression). This is disclosed rather than treated as a
+clean leak report. Native Windows execution, the optional external-music path
+in the Windows executable, GPU FPS and extended human playtesting remain
+unverified. Historical v0.8 benchmark figures below were not remeasured here.
+
+DOOR HOTFIX 0.8.1 — 2026-10-18
+Controlled collision-checked hinges replace rigid-body motors. Floor/header
+clearance prevents the slab binding against the building. Actors and solid
+obstacles stop the swing without shoving or shaking. Forced opening follows
+the interacting actor's side. Locks and sustained-force timing remain.
+
+Door checks: 7/7. Existing movement/narrative regression: 53/53.
+Accelerated test shutdown reports resources still in use; exported-pack
+startup/shutdown at normal timing completes separately without errors.
+Native Windows execution remains untested. Prior performance numbers below
+are historical v0.8 results, not a new hotfix benchmark.
+
+AFTERIMAGE 0.8.0-beta validation — 2026-10-17
+Godot 4.5.1 official, Linux x64, Compatibility renderer.
+
+Automated verification:
+- redesign.gd: 53/53, movement/sprint/slide/jump, stairs across four floors,
+  collisions, intent, combat, clues and both endings.
+- props_and_motion.gd: 14/14, grounded imported furniture, physical collision,
+  rotated tabletop, authored locomotion, hit and persistent death animation.
+- immersion.gd: 14/14, cinematic/pause/skip, nonfatal hurt movement, braking,
+  crouch obstruction/recovery, arms/body and supplied enemy rig.
+- controls_and_combat.gd, rendered X11: 27/27, capture/recovery, panel placement
+  and reach, bedrooms, armed hostiles/unarmed noncombatants, all four enemy
+  roles damaging from their actual animated muzzle, cover and burst/reload.
+- stability_probe.gd: 5/5, 36,000 manual pose updates (ten simulated minutes),
+  constant uniform firearm scale, visual/ballistic muzzle agreement, 100-shot
+  effect/voice budget saturation, casing expiration. Max weapon basis axis
+  0.96800023, maximum axis distortion 0.00000066. No leaked objects reported.
+  This exercises pose math; it is not a ten-minute rendered gameplay soak.
+- camera_quality.gd: 7/7, rendered timing probe with 3D disabled to isolate input.
+  Tests immediate horizontal/vertical look, interpolation at 20 Hz physics /
+  240 Hz render cap (70/70 intertick frames moved smoothly), teleport, 400 ms-frame recoil, pause.
+
+- battle_soak.gd: 90 rendered active-combat frames, 15 enemy rounds,
+  node count 3578 baseline / 3638 maximum; rifle scale bounded at 0.96800017.
+  This is a short rendered combat check, not extended hardware playtesting.
+- effect_cleanup.gd: shot effects safely cancel through a chapter change.
+- quit.gd: Exit to Desktop starts a clean shutdown.
+
+Controlled opening-scene comparison, performance_probe.gd:
+1280x720, Xvfb, Mesa llvmpipe software renderer, Dummy audio. Enemies frozen;
+125 rendered frames, first 45 ignored; 80 samples averaged. Default MSAA is
+4x in v0.7 and 2x in v0.8. Same scene and
+camera for both builds. No laptop/GPU FPS prediction is made.
+                           v0.7 baseline     v0.8 final
+Draw calls per frame          12132.64          1802.637  (85.1% fewer)
+Rendered primitives           1190113           548070   (53.9% fewer)
+Scene nodes                      6260             3578  (42.8% fewer)
+Engine TIME_PROCESS, ms          488.2043          315.3572
+TIME_PROCESS is a frame timing monitor, not an isolated CPU benchmark.
+Changing scene/camera and active combat will change these measurements.
+
+Visual inspection: title, supplied-plan bedroom, flush mounted circuit,
+armed enemy firing and supplied reload pose; first-person hip/ADS/fire views.
+
+Delivery includes Windows x64 EXE plus exported external PCK, editable source,
+credits, licenses and a backup-first updater for the user's Windows v4 folder.
+Windows executable and updater cannot be executed natively in this Linux
+session. Native Windows mouse feel, GPU performance and extended human
+playtesting remain unverified. No claim of all possible bugs being eliminated.
+The software renderer reports V-Sync control unavailable.

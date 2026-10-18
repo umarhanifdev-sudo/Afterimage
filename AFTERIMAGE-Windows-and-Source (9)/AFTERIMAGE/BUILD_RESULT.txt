@@ -1,0 +1,7 @@
+AFTERIMAGE 0.9.0-beta — dialogue, grip and audio polish
+Godot 4.5.1 official Windows x64 runtime plus external resource pack.
+Polish 26/26; gameplay 53/53; doors 7/7; camera 7/7; immersion 14/14.
+Import/export and matching Linux runtime pack smoke passed.
+Pack reports 0.9.0-beta and a complete 96-second original score.
+Native Windows runtime/updater remain untested. See VALIDATION.txt.
+PCK SHA256: f0673ea50dd4dc001494dc81db77b3a4743ce353cfd9d5c3c9c164bb2631bf6b
